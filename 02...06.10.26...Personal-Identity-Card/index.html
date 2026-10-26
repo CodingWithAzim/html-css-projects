@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Personal Identity Card</title>
+    <meta
+      name="description "
+      content="A modern personal identity card built with semantic element"
+    />
+    <style>
+      body {
+        background-color: #0b0d10;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========================================== -->
+    <!--   MAIN PAGE & OUTER OF IDENTITY CARD       -->
+    <!-- ========================================== -->
+
+    <main class="page-root">
+      <!-- ========================================== -->
+      <!--   --   IDENTITY CARD FULL BOX --           -->
+      <!-- ========================================== -->
+      <section class="identity-card">
+        <!-- for glow -->
+        <div
+          class="card-glow card-glow-one"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="card-glow card-glow-two"
+          aria-hidden="true"
+        ></div>
+
+        <!--/ Header section // -->
+        <header class="header">
+          <div class="avatar">
+            <img
+              src="./assets/cropped_circle_image (2).png"
+              alt=""
+            />
+          </div>
+
+          <!-- /* -- for heading text the middle ones  -- */ -->
+
+          <div class="profile-heading">
+            <p class="eybrow">DIGITAL IDENTITY</p>
+            <h2 class="name">Azim Ahmed</h2>
+            <p class="role">Aspiring Web Developer</p>
+          </div>
+
+          <!-- /* -- for dot status -- */ -->
+
+          <div class="dot-area">
+            <span class="dot"></span>
+            Available
+          </div>
+        </header>
+        <!-- ========================================== -->
+        <!--   --  INTRO SECTION --           -->
+        <!-- ========================================== -->
+        <section class="intro">
+          <p class="intro-heading">A little about me</p>
+          <p class="intro-body">
+            I enjoy turning ideas into clean, useful digital
+            experiences. Right now I am building my skills
+            in HTML, CSS and JavaScript through real-world
+            projects.
+          </p>
+        </section>
+        <!-- ========================================== -->
+        <!--   --  SKILL SECTION --           -->
+        <!-- ========================================== -->
+
+        <section class="main-skill-box">
+          <div class="skill-box-heading">
+            <p class="focus-text">Current focus</p>
+            <p>03 skills</p>
+          </div>
+
+          <!-- /* -- only for skill list -- */ -->
+
+          <div class="skill-list">
+            <article class="skill-item" id="skill-item-01">
+              <span class="skill-number">01</span>
+
+              <div class="skill-details">
+                <h2>HTML</h2>
+                <p>
+                  Semantic structure & accessible markup
+                </p>
+              </div>
+            </article>
+
+            <article class="skill-item" id="skill-item-02">
+              <span class="skill-number">02</span>
+
+              <div class="skill-details">
+                <h2>CSS</h2>
+                <p>Responsive layouts & visual design</p>
+              </div>
+            </article>
+
+            <article class="skill-item" id="skill-item-03">
+              <span class="skill-number">03</span>
+
+              <div class="skill-details">
+                <h2>JavaScript</h2>
+                <p>
+                  Interactive interfaces & problem solving
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!--      --  FOOTER SECTION --           -->
+        <!-- ========================================== -->
+
+        <footer class="profile-footer">
+          <div class="text">
+            <p>BASED IN</p>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+
+          <a
+            href="mailto:azimbabu3234@gmail.com"
+            class="contact-link"
+            >Let's Connect <span>↗</span></a
+          >
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

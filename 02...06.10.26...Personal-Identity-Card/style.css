@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap");
+
+/* for name Azim Ahmed */
+@import url("https://fonts.googleapis.com/css2?family=Scope+One&display=swap");
+
+/* for skill numbering */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: #f4f5f7;
+}
+:root {
+  --page: #0b0d10;
+  --surface: #14171c; /* nei */
+  --surface-soft: rgba(
+    255,
+    255,
+    255,
+    0.04
+  ); /*  skill box */
+
+  --text: #f4f5f7;
+  --muted: #a4aab4; /* নামের নিচে স্কিলের নিচে */
+  --line: rgba(255, 255, 255, 0.1);
+  --accent: #d8ff52;
+  --accent-ink: #111500; /* rt*/
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  --radius-lg: 32px;
+  --radius-md: 18px; /* skill box */
+  --content-width: 720px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 18% 28%,
+      #84925438,
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      #656d9b34,
+      transparent 30%
+    ),
+    var(--page);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.26;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.12) 0.6px,
+    transparent 0.6px
+  );
+  background-size: 5px 5px;
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 85%
+  );
+}
+/* -- ========================================== */
+/* -- MAIN PAGE & OUTER OF IDENTITY CARD --      */
+/* -- ========================================== */
+
+.page-root {
+  min-height: 100vh;
+  width: min(100%, 800px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -- =====================================iden=====  */
+/*    -- IDENTITY CARD FULL BOX --                */
+/* -- ==========================================  */
+
+.identity-card {
+  position: relative;
+  /* border: 5px solid blue; */
+  margin: 25px 0 35px;
+  width: min(100%, 700px);
+  padding: clamp(20px, 5vw, 35px);
+  border-radius: 32px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.025)
+  );
+  box-shadow: var(--shadow);
+  isolation: isolate;
+  overflow: hidden;
+}
+/* -- Header section -- */
+.header {
+  /* border: 5px solid red; */
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+/* -- for image -- */
+
+.avatar {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.12);
+}
+
+/* -- for heading text the middle ones  -- */
+
+.profile-heading {
+  margin: 0;
+}
+.eybrow {
+  color: var(--accent);
+  letter-spacing: 0.7px;
+  margin: 0;
+  font-family: monospace;
+}
+.name {
+  font-size: clamp(30px, 22.18px + 2.04vw, 50px);
+  margin: 0;
+
+  font-family: "Scope One", serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+.role {
+  color: var(--muted);
+  margin: 0;
+  font-size: 15px;
+}
+/* -- for dot status -- */
+
+.dot-area {
+  font-size: 14px;
+  color: rgb(220, 243, 143);
+
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: #d4f07838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  gap: 8px;
+}
+.dot {
+  width: 9px;
+  aspect-ratio: 1;
+
+  background-color: rgb(186, 243, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+
+  background-color: rgb(186, 243, 0);
+}
+
+.dot {
+  width: 7px;
+  aspect-ratio: 1;
+  background-color: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgb(215, 255, 82);
+
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.card-glow {
+  position: absolute;
+  width: 220px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  pointer-events: none;
+  filter: blur(60px);
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.card-glow-one {
+  top: -120px;
+  right: -70px;
+  background: var(--accent);
+}
+
+.card-glow-two {
+  bottom: -140px;
+  left: -80px;
+  background: #6f7cff;
+}
+
+/* -- ==========================================  */
+/*    -- INTRO SECTION --                */
+/* -- ==========================================  */
+
+.intro {
+  /* background-color:red;; */
+  border-top: 1px solid rgba(121, 115, 115, 0.562);
+
+  padding-top: 15px;
+}
+
+.intro-heading {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro-heading,
+.skill-box-heading {
+  font-size: 12px;
+}
+.intro-body {
+  /* width:67ch ; */
+  max-width: 58ch;
+  /* border:5px solid red; */
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(236, 229, 229, 0.918);
+}
+
+/* -- ==========================================  */
+/*    -- SKILL SECTION --                */
+/* -- ==========================================  */
+
+.skill-box-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-box-heading p {
+  color: var(--muted);
+  font-family: "DM Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.skill-box-heading {
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.08em;
+}
+
+/* <!-- -- only for skill list -- --> */
+
+.skill-list {
+  /* border: 5px solid red; */
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.skill-number {
+  width: 40px;
+  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
+  /* background-color: #d8ff52; */
+  border: 2px solid #d8ff52;
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  font-family: "DM Mono", monospace;
+}
+.skill-item {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border: 1px solid var(--line);
+  padding-left: 13px; /* if i give padding the box ,,,,the box will become so fatty */
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgb(116, 111, 111);
+  background-color: rgba(61, 60, 59, 0.438);
+  position: relative;
+}
+
+.skill-item:hover {
+  border: 1px solid #c3ff00;
+  box-shadow: 0 0 20px #c3ff00;
+  color: #c3ff00;
+  transform: translateY(-2px);
+}
+.skill-item:hover .skill-number {
+  /* border: 2px solid white; */
+  border: 2px solid #d8ff52;
+  color: #c3ff00;
+}
+.skill-item:hover .skill-details p {
+  color: rgba(255, 255, 255, 0.877);
+}
+
+/* /* -- FOR HOW MUCH I KNOW SKILL  -- */
+
+#skill-item-01:hover::after {
+  content: "95%";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #c3ff00;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 2px;
+}
+
+#skill-item-02:hover::after {
+  content: "80%";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #c3ff00;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 2px;
+}
+
+#skill-item-03:hover::after {
+  content: "70%";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #c3ff00;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 2px;
+}
+
+.skill-details h2 {
+  font-size: 1.2rem;
+}
+
+.skill-details p {
+  color: var(--muted);
+}
+/* -- ==========================================  */
+/*     -- FOOTER SECTION --                */
+/* -- ==========================================  */
+.text p:first-child {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: "DM Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.text p:last-child {
+  color: rgba(236, 229, 229, 0.918);
+  font-size: 15px;
+}
+
+.profile-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  margin-top: clamp(25px, 4vw, 45px);
+  gap: 20px;
+}
+
+.contact-link {
+  /* border: 1px solid #c3ff00; */
+  padding: 12px 15px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-link span {
+  color: black;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 4px #c3ff00;
+}
+/* -- ==========================================  */
+/*     -- RESPONSIVE DESIGN--                */
+/* -- ==========================================  */
+
+@media (max-width: 700px) {
+  .page-root {
+    width: min(100% - 15px, 880px);
+    /* padding-top: 20px; */
+  }
+  .identity-card {
+    /* border:2px solid red; */
+    margin-top: 15px;
+    border-radius: 24px;
+    padding: 18px;
+  }
+  .header {
+    grid-template-columns: auto 1fr;
+  }
+
+  .dot-area {
+    grid-column: 1;
+    justify-self: start;
+  }
+  .intro-body {
+    font-size: 17px;
+  }
+  .profile-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .contact-link {
+    justify-content: center;
+  }
+}

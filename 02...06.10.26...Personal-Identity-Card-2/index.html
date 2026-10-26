@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width , initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="A modern personal identity card built with semantic HTML and modern CSS."
+    />
+    <title>Personal Identity Card</title>
+    <style>
+      html,
+      body {
+        background: #0b0d10;
+      } 
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BODY..TWO -->
+    <main class="page-body">
+      <!-- MAIN CARD -->
+      <section class="main-card-frame">
+        <!-- TOP AND BOTTOM SMALL GLOW -->
+        <div
+          class="card-glow card-glow-one"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="card-glow card-glow-two"
+          aria-hidden="true"
+        ></div>
+
+        <!-- AVATER/PHOTO -->
+        <header class="profile-header">
+          <div class="avatar">
+            <img
+              src="./assets/cropped_circle_image (2).png"
+              alt="azim-photo"
+            />
+          </div>
+
+          <!-- HEADING -->
+          <div class="profile-heading">
+            <p class="eyebrow">DIGITAL IDENTITY</p>
+            <h1 id="profile-name">Azim Ahmed</h1>
+            <p class="role">Aspiring Web Developer</p>
+          </div>
+          <span class="status-badge-main-frame">
+            <span class="status-dot" aria-hidden="true">
+            </span>
+            Available
+          </span>
+        </header>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <!-- A LITTLE ABOUT ME SECTION -->
+        <section
+          class="intro-main-box"
+          aria-labelledby="intro-title"
+        >
+          <p class="section-heading" id="intro-title">
+            A little about me
+          </p>
+          <p>
+            I enjoy turning ideas into clean, useful digital
+            experiences. Right now I am building my skills
+            in HTML, CSS and JavaScript through real-world
+            projects.
+          </p>
+        </section>
+
+        <!-- SKILL SHOWING -->
+
+        <section
+          class="skill-box-main"
+          aria-labelledby="skills-title"
+        >
+          <!-- section heading row borabor skill ar upore -->
+          <div class="section-heading-row">
+            <p class="skill-section-heading">
+              CURRENT FOCUS
+            </p>
+            <p class="skills-i-know">03 SKILLS</p>
+          </div>
+          <!-- SKILL LIST -->
+          <div class="skill-list">
+            <!-- skill item 1 -->
+            <!-- there are two item into me -->
+            <article class="skill-item">
+              <!-- number one item -->
+              <div class="skill-number">01</div>
+              <!-- number two item -->
+              <div>
+                <h2>HTML</h2>
+                <p>
+                  Semantic structure & accessible markup
+                </p>
+              </div>
+            </article>
+
+            <!-- skill item 2 -->
+            <article class="skill-item 02">
+              <div class="skill-number">02</div>
+
+              <div>
+                <h2>CSS</h2>
+                <p>Responsive layouts & visual design</p>
+              </div>
+            </article>
+
+            <!-- skill item 3 -->
+
+            <article class="skill-item 03">
+              <div class="skill-number">03</div>
+
+              <div>
+                <h2>JavaScript</h2>
+                <p>
+                  Interactive interfaces & problem solving
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="profile-footer">
+          <!-- item one start-->
+          <div>
+            <p class="section-label">Based in</p>
+            <p class="footer-value">Dhaka, Bangladesh</p>
+          </div>
+          <!-- item one finshed -->
+          <!-- item 2 start-->
+          <a
+            class="contact-link"
+            href="mailto:azimbabu3234@gmail.com"
+          >
+            Let's connect
+
+            <span aria-hidden="true">↗</span></a
+          >
+          <!-- item 2 finshed -->
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

@@ -6,12 +6,12 @@ Small front-end projects built with **HTML5 and CSS3** while learning layout, st
 
 ## 🚀 Projects
 
-| #   | Project                                                        | Live Demo                                                                           |
-| --- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| 01  | **Profile Card**: photo, role, short bio and a contact button  | [View Live](https://codingwithazim.github.io/html-css-projects/01-profile-card/)    |
-| 02  | **Identity Card**: identity card layout with photo and details | [View Live](https://codingwithazim.github.io/html-css-projects/02-identity-card/)   |
-| 03  | **Identity Card 2**: second version of the identity card       | [View Live](https://codingwithazim.github.io/html-css-projects/03-identity-card-2/) |
-| 04  | **LasLes VPN**: VPN product landing page                       | [View Live](https://codingwithazim.github.io/html-css-projects/04-lasles-vpn/)      |
+| #   | Project                                                        | Completed   | Live Demo                                                                           |
+| --- | -------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------- |
+| 01  | **Profile Card**: photo, role, short bio and a contact button  | 11 Sep 2026 | [View Live](https://codingwithazim.github.io/html-css-projects/01-profile-card/)    |
+| 02  | **Identity Card**: identity card layout with photo and details | 06 Oct 2026 | [View Live](https://codingwithazim.github.io/html-css-projects/02-identity-card/)   |
+| 03  | **Identity Card 2**: second version of the identity card       | 06 Oct 2026 | [View Live](https://codingwithazim.github.io/html-css-projects/03-identity-card-2/) |
+| 04  | **LasLes VPN**: VPN product landing page                       | 13 Oct 2026 | [View Live](https://codingwithazim.github.io/html-css-projects/04-lasles-vpn/)      |
 
 ## 🛠️ Tech
 
